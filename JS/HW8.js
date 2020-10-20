@@ -49,8 +49,6 @@ function onGalleryContainerClick (evt) {
 
 }
 
-
-
 function onCloseButtonClick (evt) {
   evt.preventDefault();
   if (evt.target.nodeName !== "BUTTON") {
@@ -58,11 +56,9 @@ function onCloseButtonClick (evt) {
   };
   console.log(evt.target);
   modalContainer.classList.remove("is-open");
-  modalImg.src.remove(evt.target.dataset.source);
-  modalImg.alt.remove(evt.target.alt);
+  modalImg.src = (unknown);
+  modalImg.alt = "";
   galleryContainer.removeEventListener('click', onGalleryContainerClick);
-
-  
 }
 
 
