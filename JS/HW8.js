@@ -56,9 +56,9 @@ function onCloseButtonClick (evt) {
   };
   console.log(evt.target);
   modalContainer.classList.remove("is-open");
-  modalImg.src = (unknown);
+  modalImg.src = "";
   modalImg.alt = "";
-  galleryContainer.removeEventListener('click', onGalleryContainerClick);
+  // galleryContainer.removeEventListener('click', onGalleryContainerClick);
 }
 
 
