@@ -58,7 +58,11 @@ function onCloseButtonClick (evt) {
   };
   console.log(evt.target);
   modalContainer.classList.remove("is-open");
+  modalImg.src.remove(evt.target.dataset.source);
+  modalImg.alt.remove(evt.target.alt);
   galleryContainer.removeEventListener('click', onGalleryContainerClick);
 
   
 }
+
+
